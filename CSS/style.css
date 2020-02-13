@@ -9,18 +9,18 @@
 }
 
 header {
-  position: fixed;
-  top: 0;
   left: 0;
-  width: 100%;
-  text-align: center;
   padding: 32px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
 header img {
-  width: 136px;
   transition: width 0.1s;
+  width: 136px;
 }
 
 header img:hover{
@@ -32,37 +32,35 @@ header.scrolled img {
 }
 
 body {
+  background-color: #f4e6d8;
+  color: #15403d;
   font-family: 'Syne', Arial;
   font-size: 16px;
   line-height: 1.25;
-
-  background-color: #f4e6d8;
-  color: #15403d;
   margin: 240px auto;
   max-width: 1120px;
-
-  transition: background-color 0.5s;
   overflow-x: hidden;
+  transition: background-color 0.5s;
 }
 
 h1 {
-  font-size: 32px;
   color: #e5745d;
   font-family: 'Syne-extra';
+  font-size: 32px;
 }
 
 p {
-  font-size: 32px;
   color: #15403d;
   font-family: 'Syne';
+  font-size: 32px;
 }
 
 section {
-  margin: 80px 0;
+  align-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  margin: 80px 0;
 }
 
 section div {
@@ -79,9 +77,9 @@ section:nth-child(even) {
 }
 
 div.stamps {
+  left: 50%;
   position: absolute;
   top: 0;
-  left: 50%;
   width: 50%;
 }
 
@@ -95,7 +93,7 @@ div.stamps {
 }
 
 div.stamps img {
+  animation: spin 30s linear infinite;
   position: absolute;
   transform: translate(-50%, -50%);
-  animation: spin 30s linear infinite;
 }
